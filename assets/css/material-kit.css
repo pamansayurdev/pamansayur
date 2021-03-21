@@ -15346,9 +15346,11 @@ textarea {
 }
 
 .icon.icon-primary {
-  color: #9c27b0;
+  color: #2ecc71;
 }
-
+.icon.icon-secondary{
+  color : #E67E22;
+}
 .icon.icon-info {
   color: #00bcd4;
 }

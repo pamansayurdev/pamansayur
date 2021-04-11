@@ -15351,6 +15351,7 @@ textarea {
 
 .icon.icon-primary {
   color: #2ecc71;
+<<<<<<< HEAD
   
 }
 
@@ -15381,6 +15382,12 @@ textarea {
   }
 } */
 
+=======
+}
+.icon.icon-secondary{
+  color : #E67E22;
+}
+>>>>>>> 1b43f82d8e02a7051c071127fec2b1dd881b3975
 .icon.icon-info {
   color: #00bcd4;
 }

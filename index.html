@@ -25,7 +25,7 @@ The above copyright notice and this permission notice shall be included in all c
     Paman Sayur | Memajukan dan Menjaga Kualitas Pangan Indonesia!
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-  <meta name="description" content="Paman sayur adalah perusahaan yang bergerak disektor pertanian dengan berkolaborasi bersama pentani lokal untuk memajukan perekonomian.">
+  <meta name="description" content="Paman sayur adalah perusahaan yang bergerak disektor pertanian Banjarbaru dengan berkolaborasi bersama pentani lokal untuk memajukan perekonomian.">
   <meta name="keywords" content="Banjarbaru, sayur, distributor, pamansayurbanjarbaru, Belanja Murah Banjarbaru, sayuranbanjarbaru">
   <meta name="author" content="Pamansayur.co.id">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,9 +43,10 @@ The above copyright notice and this permission notice shall be included in all c
 </a>
 </head>
 
-<body class="landing-page sidebar-collapse">
+<body onresize="resize()" class="landing-page sidebar-collapse">
   <a href="https://api.whatsapp.com/send?phone=6285159494199&text=Halo+Pamansayur+bisa+saya+belanja+di+paman" class="wafloat" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
+    <!-- <i class="fa fa-whatsapp my-float"></i> -->
+    <P id="stats">abc</P>
   </a>
   <nav class="navbar navbar-default navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
@@ -114,13 +115,19 @@ The above copyright notice and this permission notice shall be included in all c
               <h4 class="text-left mx-5 font-weight-normal">Pamansayur.co.id merupkan portal informasi terkait profil dan layanan produk kami. </h4>
             </div>
           </div>
-          <div class="col-md-6 mt-5 ml-auto mr-auto d-flex justify-content-center"  >
+          <div id="atas" class="col-md-6 mt-5 ml-auto mr-auto d-flex justify-content-center"  >
             <div class="my-auto" >
               <h3 class="title text-left mx-5 text-primary">Tujuan</h3>
               <h4 class="text-left mx-5 font-weight-normal">Paman sayur bertujuan untuk menjaga kualitas dan kualitas pasokan bahan baku bagi umkm dan warung.</h4>
             </div>
           </div>
           <img class="col-md-6 mt-5 ml-auto mr-auto" alt="konten2" src="./assets/img/konten2.jpg" />
+          <div id="bawah" class="col-md-6 mt-5 ml-auto mr-auto d-flex justify-content-center">
+            <div class="my-auto" >
+              <h3 class="title text-left mx-5 text-primary">Tujuan</h3>
+              <h4 class="text-left mx-5 font-weight-normal">Paman sayur bertujuan untuk menjaga kualitas dan kualitas pasokan bahan baku bagi umkm dan warung.</h4>
+            </div>
+          </div>
         </div>
       </div>
       <div class="section section-why text-center bg-primary" id="why">
@@ -135,10 +142,10 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="row">
               <div class="col-md-3">
                 <div class="info">
-                  <div class="icon icon-primary col-sm-12">
-                    <i class="material-icons">local_shipping</i>
+                  <div class="icon icon-primary">
+                    <i class="material-icons" >local_shipping</i>
                   </div>
-                  <h4 class="info-title ">Gratis Ongkir & Tepat Waktu</h4>
+                  <h3 class="info-title">Gratis Ongkir & Tepat Waktu</h3>
                   <p class="text-dark font-weight-normal">Dapatkan gratis biaya pengiriman dengan hanya belanja minimal 100rb. Produk akan di kirim pada hari pemesananan yang sama</p>
                 </div>
               </div>
@@ -147,7 +154,8 @@ The above copyright notice and this permission notice shall be included in all c
                   <div class="icon icon-secondary">
                     <i class="material-icons">verified_user</i>
                   </div>
-                  <h4 class="info-title">Mutu Terjamin</h4>
+                  <h3 class="info-title">Mutu Terjamin</h3>
+                  <p id="space1" class="text-dark font-weight-normal"><br></p>
                   <p class="text-dark font-weight-normal">Kami selalu berusaha memberikan produk dengan kualitas terbaik kepada semua pelanggan </p>
                 </div>
               </div>
@@ -156,7 +164,7 @@ The above copyright notice and this permission notice shall be included in all c
                   <div class="icon icon-primary">
                     <i class="material-icons">shopping_cart</i>
                   </div>
-                  <h4 class="info-title">Jaminan Kuantitas</h4>
+                  <h3 class="info-title">Jaminan Kuantitas</h3>
                   <p class="text-dark font-weight-normal">Kami menjamin kuantitas produk yang diterima oleh pelanggan. Kami memastikan kuantitas produk sesuai dengan pesanan </p>
                 </div>
               </div>
@@ -165,7 +173,8 @@ The above copyright notice and this permission notice shall be included in all c
                   <div class="icon icon-secondary">
                     <i class="material-icons">health_and_safety</i>
                   </div>
-                  <h4 class="info-title">Garansi Produk</h4>
+                  <h3 class="info-title">Garansi Produk</h3>
+                  <p id="space2" class="text-dark font-weight-normal"><br></p>
                   <p class="text-dark font-weight-normal">Setiap produk yang diterima pelanggan kami sediakan garansi pengembalian kembali apabila terdapat produk yang rusak</p>
                 </div>
               </div>
@@ -285,9 +294,9 @@ The above copyright notice and this permission notice shall be included in all c
     <div class="container py-5">
       <div class="float-left">
         <div class="row">
-          <div class="col-md-3 col-sm-11 mr-md-5col-xs-11 d-flex justify-content-center">
+          <div class="col-md-3 d-flex justify-content-center">
             <div class="row">
-              <img class="col-11 my-auto " alt="logo" src="./assets/img/logofull.png" />
+              <img class="col-md-11 my-auto " alt="logo" src="./assets/img/logofull.png" />
             </div>
           </div>
           <div class="col-md-3">
@@ -355,6 +364,29 @@ The above copyright notice and this permission notice shall be included in all c
       }
     });
   </script> -->
+  <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    var x = document.getElementById("stats");
+    var bawah = document.getElementById("bawah");
+    var atas = document.getElementById("atas");
+    var space1 = document.getElementById("space1");
+    var space2 = document.getElementById("space2");
+    x.innerHTML = w;
+    if(w <= 767){
+      bawah.className = "col-md-6 mt-5 ml-auto mr-auto d-flex justify-content-center";
+      atas.className = "d-none";
+      space1.className = "d-none";
+      space2.className = "d-none";
+    }
+    else if(w <= 1366){
+      bawah.className = "d-none";
+    }
+   function resize() {
+    location.reload();
+   }
+  </script>
   <script>
     new Glider(document.querySelector('.glider'), {
       // Mobile-first defaults

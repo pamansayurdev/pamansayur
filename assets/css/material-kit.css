@@ -11643,6 +11643,10 @@ a.text-info:focus {
 a .material-icons {
   vertical-align: middle;
 }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 90px; }
 
 .main {
   background: #ffffff;
@@ -15311,7 +15315,7 @@ textarea {
 .info {
   max-width: 360px;
   margin: 0 auto;
-  padding: 70px 0 30px;
+  padding: 50px 0 30px;
 }
 
 .info .icon {
@@ -15319,7 +15323,7 @@ textarea {
 }
 
 .info .icon>i {
-  font-size: 3.85rem;
+  font-size: 5rem;
 }
 
 .info .info-title {
@@ -15346,8 +15350,36 @@ textarea {
 }
 
 .icon.icon-primary {
-  color: #9c27b0;
+  color: #2ecc71;
+  
 }
+
+
+.icon.icon-secondary{
+  color : #E67E22;
+}
+/* .section.section-why{
+    margin-left:-90px;
+    margin-right:-90px;
+}
+@media screen and (max-width: 368px) {
+  .section.section-why{
+    margin-left:0px;
+    margin-right:0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section.section-why{
+    margin-left:0px;
+    margin-right:0px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .section.section-why{
+    margin-left:-60px;
+    margin-right:-60px;
+  }
+} */
 
 .icon.icon-info {
   color: #00bcd4;
@@ -19040,7 +19072,16 @@ hr.primary{
     display: none !important;
   }
 }
-
+@media screen and (max-width: 767px) {
+ 
+  .info .icon>i {
+    font-size: 8rem;
+  }
+  .info p {
+    color: #999999;
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 767px) {
   .bd-docs .bd-example .card.card-profile .card-header-image {
     max-height: 100% !important;
